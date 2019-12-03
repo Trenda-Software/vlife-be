@@ -42,13 +42,7 @@ public class Usuario implements Serializable{
     private  String direccion;
     @NotEmpty
     private  String ciudad;
-   // @NotEmpty
-    //private  int idProvincias;
-    //@NotEmpty
-    //private  int idPais;
-    //@NotEmpty
-    //private  int idSolicitud;
-
+  
     public long getIdUsuario() {
         return idUsuario;
     }

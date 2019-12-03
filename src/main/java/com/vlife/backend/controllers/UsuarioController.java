@@ -35,7 +35,7 @@ public class UsuarioController {
     }
 
     @PutMapping("/usuarios/{id}")
-    public void update(Usuario usuario,long id){
+    public void update(Usuario usuario,@PathVariable(value = "id") long id){
         usuarioService.put(usuario, id);
     }
     @DeleteMapping("/usuarios/{id}")

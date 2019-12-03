@@ -50,7 +50,7 @@ public class Usuario implements Serializable{
     //private  int idSolicitud;
 
     public long getIdUsuario() {
-        return this.idUsuario;
+        return idUsuario;
     }
 
     public void setIdUsuario(long idUsuario) {
@@ -58,7 +58,7 @@ public class Usuario implements Serializable{
     }
 
     public int getCodigo() {
-        return this.codigo;
+        return codigo;
     }
 
     public void setCodigo(int codigo) {
@@ -66,7 +66,7 @@ public class Usuario implements Serializable{
     }
 
     public String getUsuario() {
-        return this.usuario;
+        return usuario;
     }
 
     public void setUsuario(String usuario) {
@@ -74,7 +74,7 @@ public class Usuario implements Serializable{
     }
 
     public String getClave() {
-        return this.clave;
+        return clave;
     }
 
     public void setClave(String clave) {
@@ -82,7 +82,7 @@ public class Usuario implements Serializable{
     }
 
     public String getCoordenadas() {
-        return this.coordenadas;
+        return coordenadas;
     }
 
     public void setCoordenadas(String coordenadas) {
@@ -90,7 +90,7 @@ public class Usuario implements Serializable{
     }
 
     public String getNombre() {
-        return this.nombre;
+        return nombre;
     }
 
     public void setNombre(String nombre) {
@@ -98,7 +98,7 @@ public class Usuario implements Serializable{
     }
 
     public String getApellido() {
-        return this.apellido;
+        return apellido;
     }
 
     public void setApellido(String apellido) {
@@ -106,7 +106,7 @@ public class Usuario implements Serializable{
     }
 
     public String getMail() {
-        return this.mail;
+        return mail;
     }
 
     public void setMail(String mail) {
@@ -114,7 +114,7 @@ public class Usuario implements Serializable{
     }
 
     public String getCelular() {
-        return this.celular;
+        return celular;
     }
 
     public void setCelular(String celular) {
@@ -122,7 +122,7 @@ public class Usuario implements Serializable{
     }
 
     public String getDireccion() {
-        return this.direccion;
+        return direccion;
     }
 
     public void setDireccion(String direccion) {
@@ -130,7 +130,7 @@ public class Usuario implements Serializable{
     }
 
     public String getCiudad() {
-        return this.ciudad;
+        return ciudad;
     }
 
     public void setCiudad(String ciudad) {

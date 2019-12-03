@@ -22,7 +22,7 @@ public class Usuario implements Serializable{
     @NotNull
     private int codigo;
     @NotEmpty
-    private String usuarios;
+    private String usuario;
 
     @NotEmpty
     private String clave;
@@ -32,7 +32,8 @@ public class Usuario implements Serializable{
     private  String nombre;
     @NotEmpty
     private  String apellido;
-    //private  VARBINARY foto; 
+    //@NotEmpty
+    //private  VarbinaryTypeDescriptor foto;
     @NotEmpty
     private  String mail;
     @NotEmpty
@@ -41,9 +42,11 @@ public class Usuario implements Serializable{
     private  String direccion;
     @NotEmpty
     private  String ciudad;
-
+   // @NotEmpty
     //private  int idProvincias;
+    //@NotEmpty
     //private  int idPais;
+    //@NotEmpty
     //private  int idSolicitud;
 
     public long getIdUsuario() {
@@ -62,12 +65,12 @@ public class Usuario implements Serializable{
         this.codigo = codigo;
     }
 
-    public String getUsuarios() {
-        return this.usuarios;
+    public String getUsuario() {
+        return this.usuario;
     }
 
-    public void setUsuarios(String usuarios) {
-        this.usuarios = usuarios;
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
     public String getClave() {
@@ -135,9 +138,10 @@ public class Usuario implements Serializable{
     }
 
 
-    public Usuario(int codigo, String usuarios, String clave, String coordenadas, String nombre, String apellido, String mail, String celular, String direccion, String ciudad) {
+    public Usuario(int codigo, String usuario, String clave, String coordenadas, String nombre, String apellido, String mail, String celular, String direccion, String ciudad) {
+        super();
         this.codigo = codigo;
-        this.usuarios = usuarios;
+        this.usuario = usuario;
         this.clave = clave;
         this.coordenadas = coordenadas;
         this.nombre = nombre;
@@ -155,4 +159,5 @@ public class Usuario implements Serializable{
 
 
 
+   
 }

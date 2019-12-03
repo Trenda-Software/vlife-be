@@ -9,4 +9,10 @@ testear la API
 
 # API endpoints
 
-    http://localhost:8080/usuario
+## Usuarios
+    GET http://localhost:8080/usuarios -> list all
+    GET http://localhost:8080/usuarios/{id} -> get one
+    POST http://localhost:8080/usuarios/ -> creates one
+    UPDATE http://localhost:8080/usuarios/{id} -> updates one
+    DELETE http://localhost:8080/usuarios/{id} -> delete one
+

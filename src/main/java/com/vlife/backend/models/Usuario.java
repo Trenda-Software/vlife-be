@@ -12,9 +12,9 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "usuarios")
-public class Usuario implements Serializable{
+public class Usuario implements Serializable {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,27 +27,25 @@ public class Usuario implements Serializable{
     @NotEmpty
     private String clave;
     @NotEmpty
-    private  String coordenadas;
+    private String coordenadas;
     @NotEmpty
-    private  String nombre;
+    private String nombre;
     @NotEmpty
-    private  String apellido;
-    //@NotEmpty
-    //private  VarbinaryTypeDescriptor foto;
+    private String apellido;
     @NotEmpty
-    private  String mail;
+    private String foto;
     @NotEmpty
-    private  String celular;
+    private String mail;
     @NotEmpty
-    private  String direccion;
+    private String celular;
     @NotEmpty
-    private  String ciudad;
-   // @NotEmpty
-    //private  int idProvincias;
-    //@NotEmpty
-    //private  int idPais;
-    //@NotEmpty
-    //private  int idSolicitud;
+    private String direccion;
+    @NotEmpty
+    private String ciudad;
+    // @NotEmpty
+    // private int idProvincias;
+    // @NotEmpty
+    // private int idPais;
 
     public long getIdUsuario() {
         return idUsuario;
@@ -137,8 +135,16 @@ public class Usuario implements Serializable{
         this.ciudad = ciudad;
     }
 
+    public String getFoto() {
+        return foto;
+    }
 
-    public Usuario(int codigo, String usuario, String clave, String coordenadas, String nombre, String apellido, String mail, String celular, String direccion, String ciudad) {
+    public void setFoto(String foto) {
+        this.foto = foto;
+    }
+
+    public Usuario(int codigo, String usuario, String clave, String coordenadas, String nombre, String apellido,
+            String mail, String celular, String direccion, String ciudad, String foto) {
         super();
         this.codigo = codigo;
         this.usuario = usuario;
@@ -150,14 +156,10 @@ public class Usuario implements Serializable{
         this.celular = celular;
         this.direccion = direccion;
         this.ciudad = ciudad;
+        this.foto = foto;
     }
 
     public Usuario() {
     }
 
-
-
-
-
-   
 }

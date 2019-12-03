@@ -5,6 +5,7 @@ import java.util.List;
 import com.vlife.backend.models.Usuario;
 import com.vlife.backend.services.IUsuarioService;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,23 +19,27 @@ public class UsuarioController {
     @Autowired
     IUsuarioService usuarioService;
 
-    @GetMapping("/Usuario")
+    @GetMapping("/usuarios")
     public List<Usuario> getAllUsuario(){
         return usuarioService.getAll();
     }
 
-    @GetMapping("/Usuario/{id}")
+    @GetMapping("/usuarios/{id}")
     public Usuario getOne(@PathVariable(value = "id") long id){
         return usuarioService.get(id);
     }
 
-    @PostMapping("/Usuario")
+    @PostMapping("/usuarios")
     public void add(Usuario usuario){
         usuarioService.post(usuario);
     }
 
-    @PutMapping("/Usuario")
-    public void update(Usuario usuario,long id){
+    @PutMapping("/usuarios/{id}")
+    public void update(Usuario usuario,@PathVariable(value = "id") long id){
         usuarioService.put(usuario, id);
     }
+    @DeleteMapping("/usuarios/{id}")
+	public void update(@PathVariable(value = "id") long id) {
+		usuarioService.delete(id);
+	}
 }

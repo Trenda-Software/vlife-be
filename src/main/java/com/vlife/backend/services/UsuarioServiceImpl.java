@@ -22,7 +22,7 @@ public class UsuarioServiceImpl implements IUsuarioService {
 
     @Override
     public List<Usuario> getAll() {
-        
+
         return (List<Usuario>) usuarioDao.findAll();
     }
 
@@ -32,7 +32,7 @@ public class UsuarioServiceImpl implements IUsuarioService {
     }
 
     @Override
-    public void put(Usuario usuario, Long id) {
+    public void put(Usuario usuario, long id) {
         usuarioDao.findById(id).ifPresent((x)->{
             usuario.setIdUsuario(id);
             usuarioDao.save(usuario);

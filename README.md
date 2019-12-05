@@ -16,3 +16,11 @@ testear la API
     UPDATE http://localhost:8080/usuarios/{id} -> updates one
     DELETE http://localhost:8080/usuarios/{id} -> delete one
 
+
+
+# Build and Run using Docker
+
+## Install Docker Community Edition in your machine
+check the version installed with 
+
+    $ docker --version

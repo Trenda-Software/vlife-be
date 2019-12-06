@@ -42,10 +42,6 @@ public class Usuario implements Serializable {
     private String direccion;
     @NotEmpty
     private String ciudad;
-    // @NotEmpty
-    // private int idProvincias;
-    // @NotEmpty
-    // private int idPais;
 
     public long getIdUsuario() {
         return idUsuario;

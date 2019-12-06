@@ -14,7 +14,7 @@
 	<description>Backend VLife</description>
 
 	<properties>
-		<java.version>12</java.version>
+		<java.version>13</java.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 	</properties>
@@ -51,7 +51,7 @@
 			</exclusions>
 		</dependency>
 
-		<!-- Migration from Java 1.8 to 1.12 START -->
+		<!-- Migration from Java 1.8 to 1.11+ START -->
 
 		<!-- API, java.xml.bind module -->
 		<dependency>
@@ -73,7 +73,7 @@
 			<version>3.23.1-GA</version>
 		</dependency>
 
-		<!-- Migration from Java 1.8 to 1.12 END -->
+		<!-- Migration from Java 1.8 to 1.11+ END -->
 	</dependencies>
 
 	<build>

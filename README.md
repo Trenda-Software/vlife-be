@@ -26,3 +26,18 @@ check the version installed with
     $ docker --version
 
 
+# Kill running tomcat in port 8080
+
+## MacOS
+    
+    $ netstat -vanp tcp | grep 3000
+
+    results
+    
+    tcp46      0      0  *.8080                 *.*                    LISTEN      131072 131072  70010      0 0x0000 0x00000006
+
+    $ kill 70010
+
+## Windows
+
+    $ netstat -nao | find str 8080

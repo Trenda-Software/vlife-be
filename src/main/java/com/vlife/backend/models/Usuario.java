@@ -39,13 +39,18 @@ public class Usuario implements Serializable {
     @NotEmpty
     private String celular;
     @NotEmpty
-    private String direccion;
-    @NotEmpty
     private String ciudad;
-    // @NotEmpty
-    // private int idProvincias;
-    // @NotEmpty
-    // private int idPais;
+
+    // @ManyToOne
+    // @JoinColumn(name = "IdPais")
+    // Pais pais;
+
+    // @ManyToOne
+    // @JoinColumn(name = "IdProvincias")
+    // Provincia provincia;
+
+    @NotEmpty
+    private String direccion;
 
     public long getIdUsuario() {
         return idUsuario;

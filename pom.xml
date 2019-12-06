@@ -38,7 +38,6 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -52,7 +51,7 @@
 			</exclusions>
 		</dependency>
 
-		<!-- Migration from 1.8 to 1.12 START -->
+		<!-- Migration from Java 1.8 to 1.12 START -->
 
 		<!-- API, java.xml.bind module -->
 		<dependency>
@@ -74,7 +73,7 @@
 			<version>3.23.1-GA</version>
 		</dependency>
 
-		<!-- Migration from 1.8 to 1.12 END -->
+		<!-- Migration from Java 1.8 to 1.12 END -->
 	</dependencies>
 
 	<build>

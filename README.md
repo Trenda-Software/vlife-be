@@ -24,3 +24,5 @@ testear la API
 check the version installed with 
 
     $ docker --version
+
+

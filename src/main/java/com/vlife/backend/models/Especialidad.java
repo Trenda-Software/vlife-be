@@ -11,7 +11,7 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "especialidad")
+@Table(name = "V_especialidad")
 public class Especialidad implements Serializable{
 
     private static final long serialVersionUID=1L;
@@ -23,7 +23,9 @@ public class Especialidad implements Serializable{
     private int codigo;
     @NotEmpty
     private String especialidad;
-
+    @NotNull
+    private int cantprofesionales;
+   
         public long getIdEspecialidad() {
         return idEspecialidad;
     }
@@ -48,11 +50,19 @@ public class Especialidad implements Serializable{
         this.especialidad = especialidad;
     }
 
+    public int getCantProfesionales() {
+        return cantprofesionales;
+    }
 
-    public Especialidad(int codigo, String especialidad) {
+    public void setCantProfesionales(int cantprofesionales) {
+        this.cantprofesionales = cantprofesionales;
+    }
+
+    public Especialidad(int codigo, String especialidad, int cantprofesionales) {
         super();
         this.codigo = codigo;
         this.especialidad = especialidad;
+        this.cantprofesionales = cantprofesionales;
     }
 
     public Especialidad() {

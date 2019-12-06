@@ -33,3 +33,4 @@ build/
 ### Spring Config ###
 application.properties
 application.local.properties
+application-mysql.properties
